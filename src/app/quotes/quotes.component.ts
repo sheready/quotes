@@ -10,8 +10,8 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
   title = 'quotes';
   quote: Quote[] = [
-    new Quote('Sam', 'Nipsey Hussle', 'Life is a Marathon', ' The Author is Nipsey Hussle'),
-    new Quote ('Cane', 'Marilyn Monroe', 'We learn daily', ' Great beauty'),
+    new Quote('Sam', 'Nipsey Hussle', 'Life is a Marathon', ' The Author is Nipsey Hussle', new Date(2019, 6, 9)),
+    new Quote ('Cane', 'Marilyn Monroe', 'We learn daily', ' Great beauty', new Date(2019, 6, 9)),
 
   ];
   toggleDetails(index){
