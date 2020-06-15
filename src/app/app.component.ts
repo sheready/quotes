@@ -7,10 +7,5 @@ import { Quote } from './quote';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'quotes';
-  quote: Quote[] = [
-    {name: 'Sam', author: 'Nipsey Hussle', quote: 'Life is a Marathon'},
-    {name: 'Cane', author: 'Kobe Bryant', quote: 'We learn daily'},
 
-  ];
 }

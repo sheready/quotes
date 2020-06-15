@@ -1,0 +1,9 @@
+<div class="container">
+  <ul>
+    <li *ngFor = 'let quote of quote;let i = index'>
+      {{quote.quote}}
+      <button (click)='toggleDetails(i)'>Toggle Details</button>
+      <app-detail *ngIf='quote.showDescription' [quote] = 'quote'></app-detail>
+    </li>
+  </ul>
+</div>
