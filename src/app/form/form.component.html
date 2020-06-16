@@ -11,26 +11,26 @@
       <div class="form-group">
 
         <label for="author">Author</label>
-        <input class="form-control" #newauthor  required >
+        <input  type="text "class="form-control" [(ngModel)]="newQuote.description" name="author" #description="ngModel" #newauthor  required >
 
     </div>
       <div class="form-group">
 
           <label for="quote">Quote</label>
-          <input class="form-control" #newquote  required>
+          <input class="form-control"  type="text" [(ngModel)]="newQuote.quote" name="quote" #description="ngModel" #newquote  required>
 
       </div>
       <div class="form-group">
 
         <label for="description">Description</label>
-        <textarea class="form-control" id="description" #newdescription required></textarea>
+        <input class="form-control" type="text" id="description" [(ngModel)]="newQuote.description" name="description" #description="ngModel" #newdescription required>
 
     </div>
 
     <div class="form-group">
 
-      <label for="complete">Completion</label>
-      <input type='date'  #newcomplete required>
+      <label for="completeDate">Completion</label>
+      <input type='date' [(ngModel)]="newQuote.completeDate" name="completeDate" #description="ngModel"  #newcomplete required>
 
     </div>
 

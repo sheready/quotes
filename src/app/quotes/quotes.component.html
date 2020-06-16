@@ -4,10 +4,12 @@
       <li appBackgroundColor>{{quote.quote}}</li>
       <button (click)='toggleDetails(i)'>Toggle Details</button>
       <app-detail *ngIf = 'quote.showDescription' [quote] = 'quote' (isComplete) = 'completeQuote($event,i)'></app-detail>
-    </div>
+</div>
+    <div class="container">
+  <app-form (addQuote)="addNewQuote($event)"></app-form>
+
+</div>
   </ul>
 </div>
-<div class="container">
-  <app-form (addQuote)="addNewQuote($event)"></app-form>
-</div>
+
 
