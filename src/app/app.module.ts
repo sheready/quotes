@@ -7,6 +7,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { DetailComponent } from './detail/detail.component';
 import { BackgroundColorDirective } from './background-color.directive';
 import { DateAgoPipe } from './date-ago.pipe';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DateAgoPipe } from './date-ago.pipe';
     QuotesComponent,
     DetailComponent,
     BackgroundColorDirective,
-    DateAgoPipe
+    DateAgoPipe,
+    FormComponent
   ],
   imports: [
     BrowserModule,
