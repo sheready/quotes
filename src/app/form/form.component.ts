@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -6,11 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
+
 addArticle(name: HTMLInputElement, author: HTMLInputElement, quote: HTMLInputElement, completeDate: HTMLInputElement ): boolean{
+
   return false;
 }
 
-constructor() { }
+constructor() {
+
+}
 
   ngOnInit(): void {
   }

@@ -8,6 +8,7 @@ import { DetailComponent } from './detail/detail.component';
 import { BackgroundColorDirective } from './background-color.directive';
 import { DateAgoPipe } from './date-ago.pipe';
 import { FormComponent } from './form/form.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormComponent } from './form/form.component';
     DetailComponent,
     BackgroundColorDirective,
     DateAgoPipe,
-    FormComponent
+    FormComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
