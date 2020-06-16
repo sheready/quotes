@@ -9,7 +9,7 @@ import { BackgroundColorDirective } from './background-color.directive';
 import { DateAgoPipe } from './date-ago.pipe';
 import { FormComponent } from './form/form.component';
 import { ArticleComponent } from './article/article.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +18,12 @@ import { ArticleComponent } from './article/article.component';
     BackgroundColorDirective,
     DateAgoPipe,
     FormComponent,
-    ArticleComponent
+    ArticleComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

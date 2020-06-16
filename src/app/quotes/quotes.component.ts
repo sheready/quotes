@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
 
 
+
 @Component({
   selector: 'app-quotes',
   templateUrl: './quotes.component.html',
@@ -10,14 +11,18 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
   title = 'quotes';
   quote: Quote[] = [
-    new Quote('Sam', 'Nipsey Hussle', 'Life is a Marathon', ' The Author is Nipsey Hussle', new Date(2019, 6, 9)),
+    new Quote('Sam', 'Nipsey Hussle', 'Life is a Marathon', ' From the mixtape Crenshaw', new Date(2019, 6, 9)),
     new Quote ('Cane', 'Marilyn Monroe', 'We learn daily', ' Great beauty', new Date(2019, 6, 9)),
 
   ];
-  toggleDetails(index){
+  addNewQuote(quote){
+    quote.completeQuote = new Date(quote.completeQuote);
+    this.quote.push(quote);
+  }
+toggleDetails(index){
     this.quote[index].showDescription = !this.quote[index].showDescription;
   }
-  completeQuote(isComplete, index){
+completeQuote(isComplete, index){
     if (isComplete){
       this.quote.splice(index, 1);
     }

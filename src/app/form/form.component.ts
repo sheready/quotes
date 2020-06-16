@@ -1,4 +1,7 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, Output, EventEmitter } from '@angular/core';
+import { Article } from '../article';
+import { Quote} from '../quote';
+
 
 @Component({
   selector: 'app-form',
@@ -7,10 +10,13 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-addArticle(name: HTMLInputElement, author: HTMLInputElement, quote: HTMLInputElement, completeDate: HTMLInputElement ): boolean{
+newQuote = new Quote('', '', '', '', new Date());
+@Output() addQuote = new EventEmitter<Quote>();
 
-  return false;
+submitQuote(){
+  this.addQuote.emit(this.newQuote);
 }
+
 
 constructor() {
 

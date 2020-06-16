@@ -1,11 +1,11 @@
 <div class="container-fluid">
   <h2 class="text-center">Add A New Quote?</h2>
   <hr>
-  <form >
+  <form (ngSubmit)='submitQuote()' #quoteForm = 'ngForm' >
       <div class="form-group">
 
           <label for="name">Name</label>
-          <input type="text" required class="form-control"  #newname name="name">
+          <input type="text" class="form-control" required id="name" [(ngModel)] = "newQuote.name" #newname='ngModel' name="name">
 
       </div>
       <div class="form-group">
@@ -20,6 +20,12 @@
           <input class="form-control" #newquote  required>
 
       </div>
+      <div class="form-group">
+
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" #newdescription required></textarea>
+
+    </div>
 
     <div class="form-group">
 
@@ -28,8 +34,9 @@
 
     </div>
 
-  <button type="submit" (click)="addArticle( newname , newauthor , newquote, newcomplete)">Add Goal</button>
+  <button type="submit" class="btn btn-success">Add Goal</button>
   </form>
 
 </div>
+
 
