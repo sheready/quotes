@@ -5,30 +5,23 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Project Description
 A landing page where a used can see quotes and also post any quotes they know,as well as delete a quote on the page.
 
-## SetUp Instrucions
-Make sure you have all the Requirements or running angular apps installed such as node, npm, tsc etc.
-Clone the repository onto your local machine.
-Run ng serve command on your terminal for a dev server.Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+## Behaviour Driven Development
+1.Displays famous quotes
+Has a toggle button which allows the user to be able to see more information in relation to the quote such as the time that has elapsed since the quote was published on the site.
+Has a delete button that ,the user can be able to delete quotes from the site.
+Has an upvote and downvote which the user is able to vote for their favourite quote.
 
-## Development server
+2.Displays a form. 
+Input a new quote,name of publisher,name of author of quote and a description of the quote.
+Output is the new quote published on the site.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technologies Used
+HTML & CSS
 
-## Code scaffolding
+ANGULAR
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+TYPESCRIPT
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 ## License
 MIT License
 
@@ -39,9 +32,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Author
 Stella Waithera 
